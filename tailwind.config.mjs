@@ -17,7 +17,10 @@ export default {
                 neutral: colors.neutral
             },
             fontFamily: {
-                sans: ['Inter', ...defaultTheme.fontFamily.sans]
+                sans: ['Inter', ...defaultTheme.fontFamily.sans],
+                title: ['Madina'],
+                darling: ['Darling'],
+                chopin: ['ChopinScript']
             }
         }
     },

@@ -1,0 +1,59 @@
+---
+import '../../src/styles/globals.css';
+import '@fontsource/inter/400.css';
+import '@fontsource/inter/800.css';
+import interFont400 from '@fontsource/inter/files/inter-latin-400-normal.woff2?url';
+import interFont800 from '@fontsource/inter/files/inter-latin-800-normal.woff2?url';
+
+import { Image } from 'astro:assets';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+interface Props {
+    title: string;
+    subtitle: string;
+    image: string;
+}
+
+const { title, subtitle, image } = Astro.props;
+const imageProps = {
+    src: image,
+    alt: 'Iglesia Los Perales',
+    class: 'object-cover object-center w-full h-full',
+};
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>{title}</title>
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="preload" as="font" type="font/woff2" href={interFont400} crossorigin />
+        <link rel="preload" as="font" type="font/woff2" href={interFont800} crossorigin />
+    </head>
+    <body class="antialiased text-white bg-white">
+        <div class="relative h-screen text-white overflow-hidden">
+            <div class="absolute inset-0">
+                <Image { ...imageProps } />
+                <div class="absolute inset-0 bg-black opacity-50"></div>
+            </div>
+
+            <div class="relative z-10 flex flex-col justify-center items-center h-full text-center">
+                <h1 class="text-7xl font-title leading-tight mb-4">{title}</h1>
+                <p class="text-lg text-white-400 mb-8">{subtitle}</p>
+                <a href="#" class="bg-gray-200 text-gray-600 hover:bg-gray-100 py-2 px-6 rounded-full text-lg font-semibold transition duration-300 ease-in-out transform" title="Proximamente">Confirmar asistencia</a>
+                <!--<a href="#" class="bg-yellow-400 text-gray-900 hover:bg-yellow-300 py-2 px-6 rounded-full text-lg font-semibold transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg" title="Proximamente">Confirmar asistencia</a>-->
+            </div>
+        </div>
+        <!--<div class="flex flex-col min-h-screen px-6 bg-grid-pattern sm:px-12">-->
+            <!--<div class="flex flex-col w-full max-w-5xl mx-auto grow">-->
+                <!--<Header />-->
+                <!--<main class="grow"><slot /></main>-->
+                <!--<Footer />-->
+            <!--</div>-->
+        <!--</div>-->
+    </body>
+</html>
