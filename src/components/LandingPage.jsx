@@ -97,6 +97,7 @@ const LandingPage = () => {
         </div>
       </section>
       <Form />
+      <br />
     </div>
   );
 };
