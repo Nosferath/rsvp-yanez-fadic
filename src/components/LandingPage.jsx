@@ -39,9 +39,12 @@ const LandingPage = () => {
                 <p className="is-size-4 has-text-white mt-4">
                   Capilla de Los Perales • Quilpué
                 </p>
-                <button className="button is-light is-large is-outlined mt-6">
+                <a
+                  href="#rsvp-form"
+                  className="button is-light is-large is-outlined mt-6"
+                >
                   Confirmar asistencia
-                </button>
+                </a>
               </div>
             </div>
           </div>
