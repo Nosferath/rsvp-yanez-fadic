@@ -90,6 +90,7 @@ const LandingPage = () => {
                 <p className="mb-4">Código: 18463156</p>
                 <a
                   href="https://www.noviosparis.cl/home/couple-catalog/18463156"
+                  target="_blank"
                   className="button is-link is-outlined"
                 >
                   Ver lista

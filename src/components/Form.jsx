@@ -10,6 +10,7 @@ export const Form = (props) => {
 
   const handleAttendingChange = (e) => {
     setIsAttending(e.target.value);
+    setBringingCompanion("");
   };
 
   const handleBringingCompanionChange = (e) => {
