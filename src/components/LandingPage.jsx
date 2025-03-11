@@ -14,9 +14,9 @@ const LandingPage = () => {
       <section
         className="hero is-fullheight is-fullwidth"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/Iglesia-Los-Perales.jpg")`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/Matrimonio.jpg")`,
           backgroundSize: "cover",
-          backgroundPosition: "center",
+          backgroundPosition: "50% 40%",
           width: "100vw",
           minHeight: "100vh",
           margin: 0,
@@ -34,17 +34,15 @@ const LandingPage = () => {
                   Claudia Fadic & Claudio Yáñez
                 </h1>
                 <h2 className="subtitle is-3 has-text-white mt-4">
-                  8 de marzo de 2025 a las 12:30 hrs.{" "}
+                  ¡Muchas gracias por acompañarnos!
                 </h2>
-                <p className="is-size-4 has-text-white mt-4">
+                <br />
+                <h3 className="subtitle is-4 has-text-white mt-4">
+                  8 de marzo de 2025 a las 12:30 hrs.{" "}
+                </h3>
+                <p className="is-size-5 has-text-white mt-4">
                   Capilla de Los Perales • Quilpué
                 </p>
-                <a
-                  href="#rsvp-form"
-                  className="button is-light is-large is-outlined mt-6"
-                >
-                  Confirmar asistencia
-                </a>
               </div>
             </div>
           </div>
@@ -100,8 +98,6 @@ const LandingPage = () => {
           </div>
         </div>
       </section>
-      <Form />
-      <br />
     </div>
   );
 };
