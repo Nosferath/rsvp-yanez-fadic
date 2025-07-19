@@ -14,7 +14,7 @@ const LandingPage = () => {
       <section
         className="hero is-fullheight is-fullwidth"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/Matrimonio.jpg")`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/Matrimonio-2.jpg")`,
           backgroundSize: "cover",
           backgroundPosition: "50% 40%",
           width: "100vw",
@@ -81,7 +81,7 @@ const LandingPage = () => {
                 </p>
               </InfoPanel>
             </div>
-
+            {/*
             <div className="column is-4-desktop is-10-tablet is-12-mobile">
               <InfoPanel title="Lista de Regalos">
                 <h3 className="is-size-4 mb-4">Novios París</h3>
@@ -95,6 +95,7 @@ const LandingPage = () => {
                 </a>
               </InfoPanel>
             </div>
+            */}
           </div>
         </div>
       </section>
